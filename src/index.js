@@ -6,14 +6,24 @@ import reportWebVitals from './reportWebVitals';
 
 import r2wc from "@r2wc/react-to-web-component"
 import Checklist from "./components/checklist/Checklist"
+import SimpleCounter from "./components/counter/Counter"
 
-const wcChecklist = r2wc(Checklist, {
+// const wcChecklist = r2wc(Checklist, {
+//   props: {
+//     items: "json"
+//   }
+// })
+
+// customElements.define("r2w-checklist", wcChecklist)
+
+
+const wcCounter = r2wc(SimpleCounter, {
   props: {
     items: "json"
   }
 })
 
-customElements.define("r2w-checklist", wcChecklist)
+customElements.define("r2w-counter", wcCounter)
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
