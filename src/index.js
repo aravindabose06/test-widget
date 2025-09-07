@@ -19,7 +19,8 @@ import SimpleCounter from "./components/counter/Counter"
 
 const wcCounter = r2wc(SimpleCounter, {
   props: {
-    items: "json"
+    min: "number",
+    max: "number"
   }
 })
 
