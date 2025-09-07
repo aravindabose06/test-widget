@@ -21,7 +21,8 @@ const wcCounter = r2wc(SimpleCounter, {
   props: {
     min: "number",
     max: "number"
-  }
+  },
+  shadow: "closed"
 })
 
 customElements.define("r2w-counter", wcCounter)
